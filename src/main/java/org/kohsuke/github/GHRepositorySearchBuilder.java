@@ -42,6 +42,18 @@ public class GHRepositorySearchBuilder extends GHSearchBuilder<GHRepository> {
     }
 
     /**
+     * Fork gh repository search builder.
+     * Possible values: true, only
+     *
+     * @param v
+     *            the v
+     * @return the gh repository search builder
+     */
+    public GHRepositorySearchBuilder fork(String v) {
+        return q("fork:" + v);
+    }
+
+    /**
      * Forks gh repository search builder.
      *
      * @param v
